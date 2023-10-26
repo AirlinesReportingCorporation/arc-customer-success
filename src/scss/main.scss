@@ -1,0 +1,7 @@
+@use "~arccorp-vars/dist/scss/main.scss";
+
+#app {
+    justify-content: center;
+    width: 100%;
+    color: main.$black;
+  }
