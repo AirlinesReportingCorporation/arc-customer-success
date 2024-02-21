@@ -15,7 +15,7 @@ export default function CustomerSuccessCard(props) {
           </a>
         </div>
         <div className="customer-success-card-tag">
-          {props.type} / {props.product}
+          {props.type} / {props.productName}
         </div>
       </div>
     </div>

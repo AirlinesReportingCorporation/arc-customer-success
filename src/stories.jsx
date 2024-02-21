@@ -2,7 +2,7 @@
 name: "Dominic Bernardo",
 title: "Head of Sales, North America ",
 company: "LOT Polish Airlines ",
-type: "carrier",
+type: "airlines",
 quote: "Airline BI offers a nice mix of data visualization and raw numbers. So, from a sales perspective, the dashboards are extremely helpful when reviewing with clients, but for our more analytical users, the raw data is useful. It’s the best of both worlds. Airline BI helps us stay on top of trends with a weekly analysis of agency performance and better understanding of how our O&Ds are performing, as well as monthly cost-of-sale metrics including market share and booking class. The data is very robust and matches well to our own internal sources.",
 shortQuote: "Airline BI helps us stay on top of trends with a weekly analysis of agency performance and better understanding of how our O&Ds are performing...",
 productLink: "https://www2.arccorp.com/products-participation/products/airline-bi/",
@@ -13,7 +13,7 @@ export const stories = [
       name: "Rolando Damas",
       title: "Sales Director, North America, Central America, and the Caribbean",
       company: "Avianca",
-      type: "carrier",
+      type: "airlines",
       quote:
         "As Avianca’s distribution strategy evolved, we needed an NDC solution that allows us to meet the needs of our customers. ARC Direct Connect enables us to offer a consistent shopping experience across channels while leading to more personalized traveler bookings.",
       shortQuote:
@@ -26,7 +26,7 @@ export const stories = [
       name: "Jenni Suomela",
       title: "Vice President of Global Sales and Channel Management",
       company: "Finnair",
-      type: "carrier",
+      type: "airlines",
       quote:
         "We are happy to partner with ARC on this important milestone on our NDC journey. Adoption of NDC with ARC benefits our joint travel agency network and ultimately enhances customer experience and allows more choice for customers.",
       shortQuote:
@@ -39,7 +39,7 @@ export const stories = [
       name: "Simon Brooks",
       title: "Senior Vice President, Sales for North America",
       company: "British Airways",
-      type: "carrier",
+      type: "airlines",
       quote:
         "British Airways is excited to be the first test partner for ARC's enhanced settlement functionality, which enables us to evolve our distribution strategy with the travel agency channel. ARC has always been a trusted partner to British Airways, and we have valued their flexibility, responsiveness and collaboration during this testing process. These enhancements will aid us in developing our relationships with agencies, and they set the stage for our growing distribution stratetgy in the U.S.",
       shortQuote:
@@ -52,7 +52,7 @@ export const stories = [
     //   name: "Rick Seaney",
     //   title: "CEO",
     //   company: "3Victors",
-    //   type: "edu",
+    //   type: "other data users",
     //   quote:
     //     "Accessing ARC’s airline sales data through the Snowflake Secure Data Exchange enables us to quickly and easily layer our two travel datasets without the need for any additional storage. We simply query the data we need, when we need it, and we’re able to quickly open up a wealth of new insights and analysis. By combining ARC’s global airline sales data with our air travel search data, we gain a more complete picture of traveler behavior and shopping trends.",
     //   shortQuote:
@@ -65,7 +65,7 @@ export const stories = [
       name: "Mable Tang",
       title: "Managing Director, Americas",
       company: "Thai Airways",
-      type: "carrier",
+      type: "airlines",
       quote:
         "ARC’s Airline BI has been adopted by several of our teams at Thai Airways. For our Data Analytics team, the raw data in the tool helps them easily drill down to pinpoint where the trends are coming from and when. For our Sales team, the custom, interactive dashboards save them both time and money from having to navigate through raw data. Additionally, Airline BI makes presenting this data to our clients easy!",
       shortQuote:
@@ -79,7 +79,7 @@ export const stories = [
       name: "Dominic Bernardo",
       title: "Head of Sales, North America ",
       company: "LOT Polish Airlines ",
-      type: "carrier",
+      type: "airlines",
       quote:
         "It’s really valuable whenever you’re trying to launch new routes to really make sure you have a finger on the pulse of how things are trending. Airline BI has helped us with speed to market in introducing new initiatives and tactics.",
       shortQuote:
@@ -125,7 +125,7 @@ export const stories = [
       name: "Dominic Bernardo",
       title: "Head of Sales, North America ",
       company: "LOT Polish Airlines ",
-      type: "carrier",
+      type: "airlines",
       quote:
         "Airline BI offers a nice mix of data visualization and raw numbers. So, from a sales perspective, the dashboards are extremely helpful when reviewing with clients, but for our more analytical users, the raw data is useful. It’s the best of both worlds. Airline BI helps us stay on top of trends with a weekly analysis of agency performance and better understanding of how our O&Ds are performing, as well as monthly cost-of-sale metrics including market share and booking class. The data is very robust and matches well to our own internal sources.",
       shortQuote:
@@ -139,7 +139,7 @@ export const stories = [
       name: "Dragan Drobnjak",
       title: "Sales Manager, USA",
       company: "Aeroflot",
-      type: "carrier",
+      type: "airlines",
       quote:
         "Using ARC’s Revenue Recovery Services, rather than our own resources, has saved us time and money.",
       shortQuote:
@@ -171,7 +171,7 @@ export const stories = [
       name: "Steve Calla",
       title: "Vice President of Marketing",
       company: "Silvercar",
-      type: "edu",
+      type: "other data users",
       quote:
         "As a startup and small business in a very crowded and competitive car rental space, AeroGram provides a terrific platform to directly reach a qualified audience of travel agents to make them aware of our product on a consistent basis. It's so important to stay top of mind and tell our story. AeroGram has proven effective for Silvercar!",
       shortQuote:
@@ -185,7 +185,7 @@ export const stories = [
       name: "Dragan Drobnjak",
       title: "",
       company: "Aeroflot",
-      type: "carrier",
+      type: "airlines",
       quote:
         "Having this tool has saved us time in terms of analyzing memo data and identifying where it’s coming from — what the issue actually is. It gives us a really good picture of all our markets and lets us drill down to a single memo.",
       shortQuote:
@@ -201,7 +201,7 @@ export const stories = [
       name: "Zia Syed",
       title: "Director of Data Mgmt & Sales Reporting",
       company: "American Airlines ",
-      type: "carrier",
+      type: "airlines",
       quote:
         "After the merger between U.S. Airways and American Airlines, ARC’s Direct Data Solutions tool gave us a quick and easy way of getting all of our ticketing data merged and available for access, so we didn’t experience any internal delays. Since then, we have transitioned the majority of our existing reports to this product, and along the way, we have found other uses for it, including measuring our basic and premium economy performance, observing channel distribution and doing simple ticket research. There is always room for improvement, such as getting remaining airlines to join the product, but I can say with absolute certainty that Direct Data Solutions is the most comprehensive industry data source available today.",
       shortQuote:
@@ -215,7 +215,7 @@ export const stories = [
       name: "Adam Sacks",
       title: "President",
       company: "Tourism Economics - An Oxford Economics Company",
-      type: "edu",
+      type: "other data users",
       quote:
         "ARC's data has played an important part in the monthly Travel Trends Index we prepare for the U.S. Travel Association. In particular, ARC's forward-looking booking data provides an insightful window into near-term future air passenger trends. Added to that, ARC's staff has consistently provided excellent service to support these custom reports.",
       shortQuote:
@@ -228,7 +228,7 @@ export const stories = [
       name: "Simon Brooks",
       title: "Senior Vice President, Sales for North America",
       company: "British Airways",
-      type: "carrier",
+      type: "airlines",
       quote:
         "British Airways is excited to be the first test partner for ARC's enhanced settlement functionality, which enables us to evolve our distribution strategy with the travel agency channel. ARC has always been a trusted partner to British Airways, and we have valued their flexibility, responsiveness and collaboration during this testing process. These enhancements will aid us in developing our relationships with agencies, and they set the stage for our growing distribution strategy in the U.S.",
       shortQuote:
@@ -259,7 +259,7 @@ export const stories = [
       name: "Hope Harper",
       title: "Revenue Recovery Manager",
       company: "Delta Air Lines",
-      type: "carrier",
+      type: "airlines",
       quote:
         "From Delta's perspective, having best practices in place sets goals and expectations for airlines, agencies and GDS providers allowing all to improve customer service and provide consistency for the debit memo process from end to end.",
       shortQuote:
@@ -275,7 +275,7 @@ export const stories = [
       name: "Jackie Baxter",
       title: "Senior Manager",
       company: "Travel Agency Audits, United Airlines",
-      type: "carrier",
+      type: "airlines",
       quote:
         "The best practices for handling debit memos will enable airlines, travel agencies and GDSs to manage debit memos in a more consistent and efficient manner. In addition, the guidelines emphasize the importance of training and communication, that are key to supporting our common goal of reducing the volume of debit memos that are issued. I applaud ARC for all of their guidance and support in making this effort a success.",
       shortQuote:
@@ -369,7 +369,7 @@ export const stories = [
       name: "Patrick Khoury",
       title: "Sr. Director Sales, USA",
       company: "Air Canada",
-      type: "carrier",
+      type: "airlines",
       quote:
         "Part of our strategy is working with travel agencies, and the folks at ARC do a great job of helping us partner more closely together. Whether it be through TravelConnect, the Debit Memo Working Group or any of the other opportunities ARC facilitates to bring us together, we've benefited quite a bit from our relationship with ARC.",
       shortQuote:
@@ -384,7 +384,7 @@ export const stories = [
     //   name: "Patrick Khoury",
     //   title: "Sr. Director Sales, USA",
     //   company: "Air Canada",
-    //   type: "carrier",
+    //   type: "airlines",
     //   quote:
     //     "We consider Itinerary Detail a roadmap. We analyze the data when we're planning to fly a new route. We can look at ID from a macro level, which we do regularly, or an individual sales manager can look at it from an account level. It's the life blood of what we do. Itinerary Detail allows us to make informed decisions about our business, and as a result, we're able to be more profitable in deciding where to fly",
     //   shortQuote: "We consider Itinerary Detail a roadmap.",
@@ -412,7 +412,7 @@ export const stories = [
       name: "Gary Ballew",
       title: "Director of Economic Development & Marketing",
       company: "The Port of Pasco",
-      type: "edu",
+      type: "other data users",
       quote:
         "At Port of Pasco, we look at advance purchases in Market Locator, anywhere from six months to two days before flown, to measure our online sales and marketing campaigns. This makes it easier to identify the purchasing window and directly correlate purchases to marketing campaigns run during the same time frame.",
       shortQuote:
@@ -470,7 +470,7 @@ export const stories = [
       name: "Michael Wang",
       title: "Senior Account Manager N. America",
       company: "China Eastern",
-      type: "carrier",
+      type: "airlines",
       quote:
         "Every single week, China Eastern Airlines uses Direct Data Solutions to enhance our ticketing insight. The comprehensive global data provided helps us create detailed reports to analyze the market situation, down to the travel agency level, which has been very beneficial to our airline.",
       shortQuote:
@@ -596,7 +596,7 @@ export const stories = [
       name: "Michael Wang",
       title: "Senior Account Manager N. America",
       company: "China Eastern",
-      type: "carrier",
+      type: "airlines",
       quote:
         "We use ARC's Agency List File every month at China Eastern Airlines. The up-to-date travel agency data included helps us to identify new business opportunities for our airline.",
       shortQuote:
@@ -610,7 +610,7 @@ export const stories = [
     //   name: "Gaston Rodriguez",
     //   title: "USA Commercial Director",
     //   company: "Azul Linhas Aereas",
-    //   type: "carrier",
+    //   type: "airlines",
     //   quote:
     //     "When it comes to using data for tracking sales, measuring agency performance, and creating incentive plans, access to recent data is critical. ARC allows us to get to the data we need the fastest with ADXMI.  We use the ADXMI tool for everything from tracking performance, to identifying new markets, to pricing. Our sales visits are more accurate by using ticketed, actual numbers instead of speculation. The tool is so user friendly, we can run any query in minutes, instead of spending hours running reports. Without ADXMI, I'm blind. Every airline should be using ARC data.",
     //   shortQuote:
@@ -624,7 +624,7 @@ export const stories = [
       name: "Craig Miller",
       title: "Director Revenue, Accounting/Sales",
       company: "United Airlines",
-      type: "carrier",
+      type: "airlines",
       quote:
         "ARC's Memo Analyzer tool provides United Airlines with reliable data points and industry benchmarks to effectively measure our debit memo resolution efforts—better than ever before. For the first time, we can clearly compare United's performance to its peers and also validate our resolution progress. The tool has helped us quickly identify the reasons driving debit memo spikes, which has allowed us to proactively address problem areas with agencies and prepare relevant training material. Memo Analyzer has proven to be invaluable in validating performance, strengthening agency relationships, and ultimately, helping us reduce debit memo issuance and the costs associated with researching, tracking and managing memos.",
       shortQuote:
@@ -638,7 +638,7 @@ export const stories = [
       name: "Dragan Drobnjak",
       title: "Sales Manager, USA",
       company: "Aeroflot",
-      type: "carrier",
+      type: "airlines",
       quote:
         "ARC offers a full-service solution for debit memo management with its Memo Manager and Memo Analyzer tools and Revenue Recovery Service (RRS). At Aeroflot, we use this integrated suite to help us manage, analyze and resolve memos quicker. Having the full picture of our debit memo story allows us to easily identify memo trends and in turn, improve processes and reduce future debit memos. Thanks to Memo Manager/Analyzer, we can quickly pinpoint where we're encountering problems and better communicate these to agency accounts. RRS then helps us preserve our agency relationships – handling the recovery process, on our behalf, with care. With ARC, we know we're in good hands.",
       shortQuote:
@@ -652,7 +652,7 @@ export const stories = [
       name: "Yvonne Garino",
       title: "Manager, Finance and Accounting",
       company: "Scandinavian Airlines",
-      type: "carrier",
+      type: "airlines",
       quote:
         "SAS has used ARC's revenue recovery program for years to streamline the collection of agency debit memos. The confidence we have in ARC, along with their knowledge of debit memo reasons and credibility in the industry, made the service a good fit for our airline. The service has alleviated time for our department to dedicate to other areas and make processes more lean, while offering the comfort that collections were being handled with great tact. In addition, we have seen measurable results with the service, including an increased turnaround time for payments. We would highly recommend the service to other airlines.",
       shortQuote:
@@ -666,7 +666,7 @@ export const stories = [
       name: "Peter E. Pincus",
       title: "Chief Commercial Officer",
       company: "CCRA International Inc.",
-      type: "edu",
+      type: "other data users",
       quote:
         "At CCRA, we've used AeroGram to promote a couple of our products to ARC agencies and received better than expected results – compared to other distribution methods. Many of these agents have now become clients, and the value of that business will keep us coming back.",
       shortQuote:
@@ -680,7 +680,7 @@ export const stories = [
     //   name: "Marios Prokopiou",
     //   title: "Associate Principal",
     //   company: "ZS Associates",
-    //   type: "edu",
+    //   type: "other data users",
     //   quote:
     //     "ARC's Global Agency Pro allows our clients to execute strategies quickly and effectively while enhancing sales operations by connecting them to travel agencies with deep sales expertise. By leveraging the networks of these influential travel agent partners, our clients have driven cost efficiencies and discovered new, valuable ways to use outreach funds within the travel agency channel. The greatest measure of success I've seen is our clients realizing additional ROI from the marketing campaigns we built together. That's impact where it matters.",
     //   shortQuote:
@@ -694,7 +694,7 @@ export const stories = [
     //   name: "Gary Edwards",
     //   title: "Principal",
     //   company: "Coastal South Carolina USA",
-    //   type: "edu",
+    //   type: "other data users",
     //   quote:
     //     "Global Agency Pro has been invaluable in assisting Coastal South Carolina with strategic planning around meetings and events in our area, helping us accurately track the seasonality of visitor volume and run successful corresponding marketing campaigns. The tool has also allowed us to recruit travel agencies best suited to promote our destination – and curb our dry season by finding agencies that book significant travel for each month of the year. Global Agency Pro is an asset when it comes to finding trends and is just as effective for the 30,000-foot view as it is down to the account level.",
     //   shortQuote:
@@ -708,7 +708,7 @@ export const stories = [
       name: "Laurie Garrow",
       title: "Associate Professor",
       company: "Georgia Tech",
-      type: "edu",
+      type: "other data users",
       quote:
         "Over the last five years, our academic research program has dramatically benefited by relying on ARC's comprehensive ticketing data. We trust ARC's expertise and quality of data to ensure our research projects are successful. ARC's air travel data has allowed us to explore and deliver breakthrough research around itinerary choice models and consumer purchasing patterns. We are very grateful for the support of ARC and ARC's data team for advancing our travel behavior analysis research.",
       shortQuote: "We trust ARC's expertise and quality of data...",
@@ -720,7 +720,7 @@ export const stories = [
       name: "Adam Sacks",
       title: "President",
       company: "Tourism Economics - An Oxford Economics Company",
-      type: "edu",
+      type: "other data users",
       quote:
         "The domestic airline bookings data provided by ARC have been critical in developing a high frequency outlook of future travel within the United States. After introducing an appropriate lag structure, ARC's forward-looking details on bookings up to six months in advance were found to correlate highly with historical domestic enplanements data from BTS and A4A, supporting their inclusion alongside macroeconomic drivers in the modeling of near-term domestic travel demand for the U.S. Travel Association's Leading Travel Index. As predictors of travel volumes, ARC data has proven immensely valuable.",
       shortQuote:
@@ -733,7 +733,7 @@ export const stories = [
       name: "Sherry Wallace",
       title: "Manager, Marketing & Air Service Development",
       company: "Roanoke Regional Airport(ROA)",
-      type: "edu",
+      type: "other data users",
       quote:
         "The timeliness of the data in Market Locator is a real differentiator. Within days of an announced downgrade in air service by a carrier at a competing airport, I was able to gauge the potential impact by examining passenger behavior.",
       shortQuote:
@@ -747,7 +747,7 @@ export const stories = [
       name: "Francois Cantau",
       title: "Head of Sales, U.S.",
       company: "La Compagnie",
-      type: "carrier",
+      type: "airlines",
       quote:
         "ARC’s Airline BI is one of La Compagnie’s most valuable sources of information for comparing performance to its competitors and supporting the airline’s sales and revenue management departments in decision making. As a small-sized, agile organization, we need a tool that gives us access to data in both a flexible and comprehensive way, and thus, we will continue to need Airline BI. The product’s recent enhancement has offered impressive data visualizations and a faster speed to access—making the platform even more user-friendly. ",
       shortQuote:
@@ -761,7 +761,7 @@ export const stories = [
       name: "Carolina Atai",
       title: "Sales Account Manager, USA",
       company: "Air Europa",
-      type: "carrier",
+      type: "airlines",
       quote:
         "ARC is very essential, not just for Air Europa, but for all of the airlines. We feel secure using ARC as the liaison between travel agencies and airlines. So, for us, being a part of and working with ARC is essential.",
       shortQuote:
@@ -803,7 +803,7 @@ export const stories = [
     //   name: "Veronique Amato",
     //   title: "Research & Strategic Development Manager",
     //   company: "Atout France",
-    //   type: "edu",
+    //   type: "other data users",
     //   quote:
     //     "Because we get more insight from Global Agency Pro than ever before, and are saving more time using the tool, we now have the data and extra time for deeper analysis to increase our destination's success.",
     //   shortQuote:

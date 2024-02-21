@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   Stickynav,
@@ -7,37 +7,137 @@ import {
   ProductCallout,
   ProductLinks,
 } from "arccorp-vars";
-
+import Select from "react-select";
 import { stories } from "./stories";
 import CustomerSuccessCard from "./components/CustomerSuccessCard";
 
-const customers = ["Agency", "Airlines", "Other Data Users"];
-let selectedCustomer = "";
-let filter = "";
-
-function customerFilter() {
-  if (selectedCustomer == "Agency") {
-    filter = stories.filter((story) => story.type == "agency");
-  }
-  if (selectedCustomer == "Airlines") {
-    filter = stories.filter((story) => story.type == "carrier");
-  }
-  if (selectedCustomer == "Other Data Users") {
-    filter = stories.filter((story) => story.type == "edu");
-  } else {
-    filter = stories;
-  }
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function (txt) {
+    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
 }
 
-//Thinking of making a product array to then search in and replace. 
-function replaceProduct() {
-  if (prdouct == "ARC Direct Connect") {
-    //replace the word with a link
-  }
+const customers = [{ value: "", label: "View All Customers" }].concat(
+  [
+    ...new Set(
+      stories.map((story) => {
+        return story.type;
+      })
+    ),
+  ].map((customer) => {
+    return { value: customer, label: toTitleCase(customer) };
+  })
+);
+
+function createOptionList(arr, key) {
+  return [{ value: "", label: "View All Products" }].concat(
+    [
+      ...new Set(
+        arr.map((story) => {
+          return story[key];
+        })
+      ),
+    ].map((product) => {
+      return { value: product, label: product };
+    })
+  );
 }
+
+let products = createOptionList(stories, "productName");
+
+// let products = [{ value: "", label: "View All" }].concat(
+//   [
+//     ...new Set(
+//       stories.map((story) => {
+//        if(selectedCustomerFilter != ""){
+//         if (story.type == "agency") {
+//           return story.productName;
+//         } else if (story.type == "airlines") {
+//           return story.productName;
+//         } else if (story.type == "other data users") {
+//           return story.productName;
+//         }
+//        }
+//        else {
+//         return story.productName;
+//       }
+//       })
+//     ),
+//   ].map((product) => {
+//     return { value: product, label: product };
+//   })
+// );
 
 function App() {
-  customerFilter();
+  const [selectedCustomerFilter, setSelectedCustomerFilter] = useState("");
+  const [selectedProdFilter, setSelectedProdFilter] = useState("");
+  const [filteredStories, setFilteredStories] = useState(stories);
+  const [selectedCustomer, setSelectedCustomer] = useState("");
+  const [selectedProd, setSelectedProd] = useState("");
+  const [prodList, setProdList] = useState(products);
+
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  useEffect(() => {
+    updateFilters();
+  }, [selectedCustomerFilter, selectedProdFilter]);
+
+  useEffect(() => {
+    selectedProdFilter != "" ? "" : prodListFilter();
+  }, [filteredStories]);
+
+  useEffect(() => {
+    console.log(selectedOption);
+  }, [selectedOption])
+
+  function updateCustomer(event) {
+    setSelectedCustomerFilter(event.value);
+    setSelectedCustomer(event.value);
+  }
+
+  function updateProduct(event) {
+    setSelectedProdFilter(event.value);
+    setSelectedProd(event.value);
+  }
+
+  function clearFilter() {
+    setSelectedCustomerFilter("");
+    setSelectedProdFilter("");
+  }
+
+  function prodListFilter() {
+    let filteredProd = createOptionList(filteredStories, "productName");
+    setProdList(filteredProd);
+  }
+
+  function updateFilters() {
+    if (selectedCustomerFilter != "" && selectedProdFilter != "") {
+      setFilteredStories(
+        stories.filter(
+          (story) =>
+            story.type == selectedCustomerFilter &&
+            story.productName == selectedProdFilter
+        )
+      );
+    } else if (selectedCustomerFilter != "" && selectedProdFilter == "") {
+      setFilteredStories(
+        stories.filter((story) => story.type == selectedCustomerFilter)
+      );
+    } else if (selectedProdFilter != "" && selectedCustomerFilter == "") {
+      setFilteredStories(
+        stories.filter((story) => story.productName == selectedProdFilter)
+      );
+    } else {
+      setFilteredStories(stories);
+    }
+  }
+
+  //Thinking of making a product array to then search in and replace.
+  function replaceProduct() {
+    if (prdouct == "ARC Direct Connect") {
+      //replace the word with a link
+    }
+  }
   return (
     <div className="arc-customer-succcess">
       <Stickynav
@@ -77,17 +177,39 @@ function App() {
             </div>
           </div>
           <div className="row no-gutters">
+            <div className="col-md-3">
+              <Select
+                options={customers}
+                value={{value: selectedCustomerFilter, label: selectedCustomerFilter == "" ? "View All Customers" : toTitleCase(selectedCustomerFilter)}}
+                onChange={(e) => updateCustomer(e)}
+                className="customer-filter"
+              ></Select>
+            </div>
+            <div className="col-lg-3">
+              <Select
+                options={prodList}
+                value={{value: selectedProdFilter, label: selectedProdFilter == "" ? "View All Products" : selectedProdFilter}}
+                onChange={(e) => updateProduct(e)}
+                className="product-filter"
+              ></Select>
+            </div>
+            <div className="col">
+              <div className="ctaBtn" onClick={clearFilter}>
+                Clear Filter
+              </div>
+            </div>
+          </div>
+          <div className="row no-gutters">
             <div className="col-lg-9">
               <div className="row">
                 <div className="col-md-12">
-                  {filter.map((story, i) => {
-                    console.log(story);
+                  {filteredStories.map((story, i) => {
                     return (
                       <CustomerSuccessCard
                         key={i}
                         name={story.name}
-                        type={story.type != "carrier" ? story.type : "Airlines"}
-                        quote={story.quote}
+                        type={story.type}
+                        quote={story.shortQuote}
                         title={story.title}
                         company={story.company}
                         productLink={story.productLink}
