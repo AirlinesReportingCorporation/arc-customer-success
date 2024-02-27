@@ -178,7 +178,7 @@ function App() {
                 <div className="row align-items-baseline">
                   <div className="col-md-3">
                     <Select
-                    unstyled
+                      unstyled
                       options={customers}
                       value={{
                         value: selectedCustomerFilter,
@@ -193,7 +193,7 @@ function App() {
                   </div>
                   <div className="col-lg-3">
                     <Select
-                    unstyled
+                      unstyled
                       options={prodList}
                       value={{
                         value: selectedProdFilter,
@@ -237,7 +237,18 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-3"></div>
+            <div className="col-lg-3">
+              <a
+                style={{display: "block", margin:"15px auto", padding: "0 15px", maxWidth: "350px"}}
+                href="https://www2.arccorp.com/products-participation/distribution/arcdirectconnect/?utm_source=customer_success_stories"
+              >
+                <img
+                  style={{display: "block", width:"100%"}}
+                  src="https://www2.arccorp.com/globalassets/homepage/redesign/banner.jpg"
+                  alt="Aria Case Study"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>

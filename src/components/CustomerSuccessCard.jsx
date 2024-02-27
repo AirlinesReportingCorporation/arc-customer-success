@@ -10,7 +10,7 @@ export default function CustomerSuccessCard(props) {
             <b className="customer-name">{props.name}</b> &nbsp; <em className="customer-title">{props.title}</em> &nbsp;
             <span className="customer-company">{props.company}</span>
           </p>
-          <a className="ctaBtn" href={props.producLink}>
+          <a className="ctaBtn" href={props.productLink}>
             {props.productName}
           </a>
         </div>
