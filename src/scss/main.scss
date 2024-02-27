@@ -31,6 +31,55 @@
   }
 }
 
-.customer-card-filter {
-  margin: 0 15px 30px;
+.filter-area {
+  margin: 0 25px 30px;
+  .customer-card-filter {
+    font-family: SourceSansPro-Bold, arial, sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+.customer-filter, .product-filter {
+  display: inline-block;
+  background: #ffffff;
+  color: #189bb0;
+  font-family: SourceSansPro-Black, arial, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  width: 250px;
+  padding: 5px 20px;
+  position: relative;
+  margin-right: 30px;
+  box-shadow: rgba(0,0,0,0.1) 0 29px 30px -35px;
+
+  .css-100ebu3-menu {
+    display: block;
+    top: 60px;
+    left: 0;
+    font-family: SourceSansPro-Regular, arial, sans-serif;
+    text-transform: uppercase;
+    background: #ffffff;
+    border-top: 1px solid #f6f6f6;
+    position: absolute;
+    width: 250px;
+    box-shadow: rgba(0,0,0,0.1) 0 29px 30px -28px;
+
+    .css-bio7mv-option {
+      padding: 20px;
+      text-transform: capitalize;
+      font-family: SourceSansPro-SemiBold, arial ,sans-serif;
+    }
+  }
+
+}
+
+.clear-filters {
+  color: #189bb0;
+  font-family: SourceSansPro-SemiBold, arial, sans-serif;
+  background: transparent;
+  min-height: 60px;
+  border-radius: 0;
+  font-size: 16px;
+  margin-top: auto;
+  margin-bottom: auto;
 }

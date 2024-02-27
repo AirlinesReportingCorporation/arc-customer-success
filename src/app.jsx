@@ -88,7 +88,7 @@ function App() {
 
   useEffect(() => {
     console.log(selectedOption);
-  }, [selectedOption])
+  }, [selectedOption]);
 
   function updateCustomer(event) {
     setSelectedCustomerFilter(event.value);
@@ -173,29 +173,45 @@ function App() {
         <div className="success-story-section-inner">
           <div className="row no-gutters">
             <div className="col-lg-12">
-              <div className="customer-card-filter">Filter:</div>
-            </div>
-          </div>
-          <div className="row no-gutters">
-            <div className="col-md-3">
-              <Select
-                options={customers}
-                value={{value: selectedCustomerFilter, label: selectedCustomerFilter == "" ? "View All Customers" : toTitleCase(selectedCustomerFilter)}}
-                onChange={(e) => updateCustomer(e)}
-                className="customer-filter"
-              ></Select>
-            </div>
-            <div className="col-lg-3">
-              <Select
-                options={prodList}
-                value={{value: selectedProdFilter, label: selectedProdFilter == "" ? "View All Products" : selectedProdFilter}}
-                onChange={(e) => updateProduct(e)}
-                className="product-filter"
-              ></Select>
-            </div>
-            <div className="col">
-              <div className="ctaBtn" onClick={clearFilter}>
-                Clear Filter
+              <div className="filter-area">
+                <div className="customer-card-filter">Filter:</div>
+                <div className="row align-items-baseline">
+                  <div className="col-md-3">
+                    <Select
+                    unstyled
+                      options={customers}
+                      value={{
+                        value: selectedCustomerFilter,
+                        label:
+                          selectedCustomerFilter == ""
+                            ? "View All Customers"
+                            : toTitleCase(selectedCustomerFilter),
+                      }}
+                      onChange={(e) => updateCustomer(e)}
+                      className="customer-filter"
+                    ></Select>
+                  </div>
+                  <div className="col-lg-3">
+                    <Select
+                    unstyled
+                      options={prodList}
+                      value={{
+                        value: selectedProdFilter,
+                        label:
+                          selectedProdFilter == ""
+                            ? "View All Products"
+                            : selectedProdFilter,
+                      }}
+                      onChange={(e) => updateProduct(e)}
+                      className="product-filter"
+                    ></Select>
+                  </div>
+                  <div className="col">
+                    <div className="clear-filters ctaBtn" onClick={clearFilter}>
+                      Clear Filters
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
