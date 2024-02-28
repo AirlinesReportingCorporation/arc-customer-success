@@ -10,15 +10,41 @@
     font-family: SourceSansPro-Regular, arial, sans-serif;
     color: #333132;
     .customer-quote {
-        font-family: SourceSansPro-Light, arial, sans-serif;
-        font-size: 1.75rem;
-        color: #000000;
-        cursor: pointer;
+      font-family: SourceSansPro-Light, arial, sans-serif;
+      font-size: 1.75rem;
+      color: #000000;
+      &:hover {
+        cursor: pointer !important;
+      }
+        
     }
     .customer-company {
-        color: #999999;
+      color: #999999;
     }
   }
+
+  .customer-quote.short-quote::after {
+      margin-top: 5px;
+      color: #189bb0;
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 1rem;
+      margin-left: 5px;
+      content: '\F078';
+    }
+  
+    .customer-quote.long-quote::after {
+      margin-top: 5px;
+      color: #189bb0;
+      display: inline-block;
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      font-size: 1rem;
+      margin-left: 5px;
+      content: '\F077';
+    }
+
 
   .customer-success-card-tag {
     margin-top: 10px;

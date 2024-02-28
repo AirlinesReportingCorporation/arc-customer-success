@@ -174,9 +174,9 @@ function App() {
           <div className="row no-gutters">
             <div className="col-lg-12">
               <div className="filter-area">
-                <div className="customer-card-filter">Filter:</div>
+                <div className="customer-card-filter">Filters:</div>
                 <div className="row align-items-baseline">
-                  <div className="col-md-3">
+                  <div className="col-auto">
                     <Select
                       unstyled
                       options={customers}
@@ -190,8 +190,6 @@ function App() {
                       onChange={(e) => updateCustomer(e)}
                       className="customer-filter"
                     ></Select>
-                  </div>
-                  <div className="col-lg-3">
                     <Select
                       unstyled
                       options={prodList}
@@ -205,9 +203,7 @@ function App() {
                       onChange={(e) => updateProduct(e)}
                       className="product-filter"
                     ></Select>
-                  </div>
-                  <div className="col">
-                    <div className="clear-filters ctaBtn" onClick={clearFilter}>
+                     <div className="clear-filters ctaBtn" onClick={clearFilter}>
                       Clear Filters
                     </div>
                   </div>
@@ -225,6 +221,7 @@ function App() {
                         key={i}
                         name={story.name}
                         type={story.type}
+                        longQuote={story.quote}
                         quote={story.shortQuote}
                         title={story.title}
                         company={story.company}
@@ -239,11 +236,16 @@ function App() {
             </div>
             <div className="col-lg-3">
               <a
-                style={{display: "block", margin:"15px auto", padding: "0 15px", maxWidth: "350px"}}
+                style={{
+                  display: "block",
+                  margin: "15px auto",
+                  padding: "0 15px",
+                  maxWidth: "350px",
+                }}
                 href="https://www2.arccorp.com/products-participation/distribution/arcdirectconnect/?utm_source=customer_success_stories"
               >
                 <img
-                  style={{display: "block", width:"100%"}}
+                  style={{ display: "block", width: "100%" }}
                   src="https://www2.arccorp.com/globalassets/homepage/redesign/banner.jpg"
                   alt="Aria Case Study"
                 />

@@ -40,12 +40,14 @@
 }
 
 .customer-filter, .product-filter {
+  &:hover {
+    cursor: pointer !important;
+  }
   display: inline-block;
   background: #ffffff;
   color: #189bb0;
   font-family: SourceSansPro-Black, arial, sans-serif;
   text-transform: uppercase;
-  cursor: pointer;
   width: 250px;
   padding: 5px 20px;
   position: relative;
@@ -73,7 +75,7 @@
 
 }
 
-.clear-filters {
+.clear-filters, .clear-filters.ctaBtn:focus, .clear-filters.ctaBtn:hover {
   color: #189bb0;
   font-family: SourceSansPro-SemiBold, arial, sans-serif;
   background: transparent;
