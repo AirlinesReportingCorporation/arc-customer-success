@@ -10,6 +10,7 @@
 
 .customer-success-jumbo {
   padding-top: 200px;
+  background-position: top center;
 }
 
 .arc-customer-succcess{
@@ -84,4 +85,15 @@
   font-size: 16px;
   margin-top: auto;
   margin-bottom: auto;
+}
+
+
+@media (max-width: 575.98px) {
+  .customer-card-filter {
+    margin-left: 15px;
+  }
+
+  .customer-filter, .product-filter {
+    margin-bottom: 20px;
+  }
 }
